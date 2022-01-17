@@ -87,7 +87,7 @@ def get_pie_chart(site_dropdown):
      [Input(component_id='site-dropdown',component_property='value'),Input(component_id="payload-slider", component_property="value")]               
 )
 def get_scatter_plot(site_dropdown, payload_slider):
-    if site_dropdown == 'All Sites':
+    if site_dropdown == 'ALL':
         low, high = payload_slider
         df  = spacex_df
         mask = (df['Payload Mass (kg)'] > low) & (df['Payload Mass (kg)'] < high)
